@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pricing and plans page">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Development">
+    <meta name="satyam" content="pricing page">
+    <title>satyam membership plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="currency-selector">
+        <label for="currency">Select Currency:</label>
+        <select id="currency" onchange="updateCurrencySymbol()">
+            <option value="INR">INR</option>
+            <option value="$">USD</option>
+            <option value="€">Euro</option>
+        </select>
+    </div>
+    <div class="container">
+        <div class="top">
+            <h1>Be the Part of Family</h1>
+            <div class="toggle-btn">
+                <span style="margin: 0.8em;">Annually</span>
+                <label class="switch">
+                    <input type="checkbox" id="checbox" onclick="check()" ; />
+                    <span class="slider round"></span>
+                </label>
+                <span style="margin: 0.8em;">Monthly</span>
+            </div>
+        </div>
+        <div class="package-container">
+            <div class="packages">
+                <h1>Basic</h1>
+                <h2 class="text1">INR 299.99</h2>
+                <h2 class="text2">INR 650.99</h2>
+                <ul class="list">
+                    <li class="first">Unlimited movies</li>
+                    <li>Watch on 1 device</li>
+                    <li>Watch in HD</li>
+                    <li>Email Support</li>
+                </ul>
+                <a href="#" class="button button1">SUBSCRIBE</a>
+            </div>
+            <div class="packages">
+                <h1>Standard</h1>
+                <h2 class="text1">INR 399.99</h2>
+                <h2 class="text2">INR 999.99</h2>
+                <ul class="list">
+                    <li class="first">Basic ++</li>
+                    <li>Supports 2 device</li>
+                    <li>Watch in Full HD</li>
+                    <li>Free mobile games</li>
+                </ul>
+                <a href="#" class="button button2">SUBSCRIBE</a>
+            </div>
+            <div class="packages">
+                <h1>Premium</h1>
+                <h2 class="text1">INR 499.99</h2>
+                <h2 class="text2">INR 1199.99</h2>
+                <ul class="list">
+                    <li class="first">Standard ++</li>
+                    <li>Hotstar sports series</li>
+                    <li>Supports 6 devices</li>
+                    <li>watch in Ultra HD</li>
+                </ul>
+                <a href="#" class="button button3">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">What is included in the Basic plan? <span
+                        class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>The Basic plan includes unlimited movies, HD streaming, and access on one device.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I switch my plan later? <span class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Yes, you can upgrade or downgrade your plan anytime from your account settings.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What payment methods do you accept? <span
+                        class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>We accept credit/debit cards, PayPal, UPI, and other online payment options.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Is there a free trial available? <span class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Yes! We offer a 7-day free trial for new users. You can cancel anytime before the trial ends.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Satyam Kumar. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+
+</html>
